@@ -2,9 +2,9 @@
 
 An example project of a movie web app built using:
 
-- **Next.js 14** (with **React 18**)
-- Integrated with the **MovieDB API**
-- Includes both **client-rendered pages** and an **ISG** (Incremental Static Generation) page
+- **Next.js 14** (with **React 18**).
+- Integrated with the **MovieDB API**.
+- Includes both **client-rendered pages** and an **ISG** (Incremental Static Generation) page.
 
 ---
 
