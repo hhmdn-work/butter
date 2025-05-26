@@ -49,9 +49,12 @@ MongoDB, as there's not much relational mapping.
 Things I wanted to do but ran out of time: 
 
 1- Throttling pagination, although it runs pretty fast.
+
 2- Coverflow toggle mode (like in old Mac OS, but Vertical like CD cases, or like Gnome 2 Linux Effects for GUI). But doesn't play well with Next JS, the libraries I tried,
 and heavy on performance. Needs one that is minimal and fast.
+
 3- More playwright tests as they're very cool.
+
 4- An upcoming section, but the API's upcoming doesn't show actualy upcoming movies, but now playing.
 And throwing in 2026+ release dates, seems to likely render movies that are misdated.
 
