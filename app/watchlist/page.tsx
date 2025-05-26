@@ -8,6 +8,7 @@ import {
 } from 'react';
 import { useSession } from 'next-auth/react';
 import { Toaster } from 'react-hot-toast';
+import Link from 'next/link';
 import MovieContainer from '../components/MovieContainer';
 import Paginator from '../components/Paginator';
 import { ToggleMode } from '../components/TogglePanel';
@@ -153,7 +154,11 @@ function WatchlistContent(): JSX.Element {
         ) : displayedMovies.length === 0 ? (
           <div className="text-gray-400 text-center mt-12 text-lg">
             <p>Your watchlist is empty.</p>
-            <p>Add movies and come back!</p>
+            <p>
+              <Link href="/" className="text-indigo-400 hover:underline">
+                Return to Homepage
+              </Link>
+            </p>
           </div>
         ) : (
           <>
