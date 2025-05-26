@@ -160,6 +160,11 @@ export default function ContentPageClient({
                 const data = await fetchMovies(newPage);
                 setMovies(data.results.slice(0, perPage));
                 setPage(newPage);
+
+                if (typeof window !== 'undefined') {
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }
+
               } catch (error) {
                 console.error('Pagination error:', error);
               } finally {

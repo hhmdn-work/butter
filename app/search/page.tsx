@@ -218,6 +218,9 @@ export default function SearchPage(): JSX.Element {
               const results = await searchMovies(query, newPage);
               setMovies(results.results.slice(0, MOVIES_PER_PAGE));
               setPage(newPage);
+              if (typeof window !== 'undefined') {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              }
             }}
           />
         )}
