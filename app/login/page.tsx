@@ -4,7 +4,8 @@ import { useState, FormEvent, type JSX } from 'react';
 import { useRouter } from 'next/navigation';
 import { signIn } from 'next-auth/react';
 import Link from 'next/link';
-import { Toaster, toast } from 'react-hot-toast';
+import { toast } from 'react-hot-toast';
+import CustomToaster from '../components/CustomToaster';
 
 enum Label {
   Username = 'Username',
@@ -15,25 +16,6 @@ enum Label {
   NoAccount = 'Don’t have an account?',
   SignUp = 'Sign up',
 }
-
-const toasterOptions = {
-  position: 'top-right' as const,
-  toastOptions: {
-    style: {
-      background: '#1f2937', // Tailwind: bg-gray-800
-      color: '#fff',
-      border: '1px solid #4f46e5', // Tailwind: border-indigo-600
-      padding: '12px 16px',
-      fontSize: '0.875rem',
-    },
-    success: {
-      iconTheme: {
-        primary: '#10b981', // Tailwind: green-500
-        secondary: '#1f2937',
-      },
-    },
-  },
-};
 
 export default function LoginPage(): JSX.Element {
   const [username, setUsername] = useState('');
@@ -59,7 +41,7 @@ export default function LoginPage(): JSX.Element {
 
   return (
     <div className="h-[calc(100vh-100px)] bg-gray-900 text-white flex items-center justify-center">
-      <Toaster {...toasterOptions} />
+      <CustomToaster />
 
       <form
         onSubmit={handleSubmit}

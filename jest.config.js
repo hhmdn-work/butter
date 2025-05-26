@@ -8,5 +8,9 @@ module.exports = {
   transform: {
     ...tsJestTransformCfg,
   },
+  testPathIgnorePatterns: [
+    '/node_modules/',
+    '/playwright/',       // ignore Playwright tests folder
+  ],
   verbose: true,
 };

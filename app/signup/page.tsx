@@ -3,8 +3,9 @@
 import { useState, useEffect, type JSX, type FormEvent } from 'react';
 import { useRouter } from 'next/navigation';
 import { useSession, signIn } from 'next-auth/react';
-import { Toaster, toast } from 'react-hot-toast';
 import Link from 'next/link';
+import { toast } from 'react-hot-toast';
+import CustomToaster from '../components/CustomToaster';
 
 const SIGNUP_API = '/api/auth/signup';
 const HOME_ROUTE = '/';
@@ -60,24 +61,7 @@ const SignupPage = (): JSX.Element => {
 
   return (
     <div className="h-[calc(100vh-100px)] bg-gray-900 text-white flex items-center justify-center px-4">
-      <Toaster
-        position="top-right"
-        toastOptions={{
-          style: {
-            background: '#1f2937',
-            color: '#fff',
-            border: '1px solid #4f46e5',
-            padding: '12px 16px',
-            fontSize: '0.875rem',
-          },
-          success: {
-            iconTheme: {
-              primary: '#10b981',
-              secondary: '#1f2937',
-            },
-          },
-        }}
-      />
+    <CustomToaster />
 
       <form
         onSubmit={handleSubmit}
