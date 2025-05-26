@@ -8,6 +8,8 @@ An example project of a movie web app built using:
 
 ---
 
+![Screenshot of Movie App](screenshots/screenshot.png)
+
 ## 🚀 Getting Started
 
 ```bash
