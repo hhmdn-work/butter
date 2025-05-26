@@ -1,17 +1,1 @@
-[
-  {
-    "id": "1748110813858",
-    "username": "admin",
-    "hashedPassword": "$2b$10$8dFcK7O9s0s8VzVhYDnqE.W.5P3VWCeSigBPhXORAdHwWMyNTouxi"
-  },
-  {
-    "id": "1748110976282",
-    "username": "admin1",
-    "hashedPassword": "$2b$10$pri3x.r6A5IZO9cxf7cmfuNDortxMx8lLjr2kpWD7r.bBUYc1lhVG"
-  },
-  {
-    "id": "1748111261969",
-    "username": "admin3",
-    "hashedPassword": "$2b$10$rmc.PSW4hVRbWsK8iSfuseplOt/V21El76lsHPw2b9ezjwKWr9nCi"
-  }
-]
+[]
